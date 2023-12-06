@@ -20,7 +20,7 @@ var salvius = {
     status: "Alive",
     description: "Regal, but old and kinda ugly",
     personality: "A literal piece of absolute fricking shat",
-    comment: "I would not like to have this <em>senex<em> as my master. He sounds like someone who would try to beat/sell me at the first opportunity",
+    comment: "I would not like to have this <em>senex</em> as my master. He sounds like someone who would try to beat/sell me at the first opportunity",
 }
 var varica = {
     name: "Varica",
