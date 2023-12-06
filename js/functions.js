@@ -1,6 +1,7 @@
 var current = 0
+var seclvl = 0
 
-function getFile(x) {
+function setFile(x) {
     current = x
 }
 
@@ -108,6 +109,46 @@ function updateTable() {
         document.getElementById("phys").innerHTML = petro.description
         document.getElementById("emo").innerHTML = petro.personality
         document.getElementById("grumio").innerHTML = petro.comment 
+    }
+}
+
+function accessSecrets() {
+    if (seclvl === 0) {
+        if (prompt("Enter full name of Salvius") === salvius.fullName) {
+            if (prompt("Enter name of stage 16") === "in aula") {
+                if (confirm("Continue?")) {
+                    var s = document.getElementById("lvl1");
+                    s.style.display = "block"
+                    var s = document.getElementById("grumiotbl");
+                    s.style.display = "block"
+                    var s = document.getElementById("grumiotbl2");
+                    s.style.display = "block"
+                    seclvl += 1
+                }
+                else {
+                    alert("Security clearance failed")
+                }
+            }
+            else {
+                alert("Security clearance failed")
+            }
+        }
+        else {
+            alert("Security clearance failed")
+        }
+    }
+    if (seclvl === 1) {
+        if (confirm("Is Grumio the goat?")) {
+            if (prompt("How much rizz does Grumio have") >= 3888) {
+            
+            }
+            else {
+                alert("Security clearance failed")
+            }
+        }
+        else {
+            alert("Security clearance failed")
+        }
     }
 }
 

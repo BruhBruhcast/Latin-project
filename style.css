@@ -5,8 +5,19 @@ body {
 
 span {
     font-weight: bolder;
+    
 }
 
 button {
     font-weight: bold;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    border-collapse: collapse;
+
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
 }

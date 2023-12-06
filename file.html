@@ -4,22 +4,10 @@
     <meta charset="utf-8">
     <title>CLC Book II Fact Files</title>
 </head>
-<style>
-    td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-        border-collapse: collapse;
-
-    }
-    tr:nth-child(even) {
-        background-color: #dddddd;
-    }
-</style>
 <body>
-    <script src="data.js" type="text/javascript"></script>
-    <script src="functions.js" type="text/javascript"></script>
-
+    <script src="js/data.js" type="text/javascript"></script>
+    <script src="js/functions.js" type="text/javascript"></script>
+    <a href="home.html"><span>Back to Home</span></a>
     <table>
         <tr>
             <th>Name</th>
@@ -46,7 +34,7 @@
             <td id="emo" style="width:70%">Personality</td>
         </tr>
         <tr>
-            <th style="width:70%">Comment by Grumio</th>
+            <th style="width:70%">Comment by <a href="secret.html" style="text-decoration: none;color: black;" onclick="">Grumio</a></th>
         </tr>
         <tr>
             <td id="grumio" style="width:70%">GrumioReacts</td>
@@ -55,20 +43,20 @@
     </table>
     <span style="color:aqua">Stages 13-16: Brittania</span>
     <br>
-    <button id="a" onclick="getFile(1),updateTable()">Show Fact File of Quintus</button>
-    <button id="b" onclick="getFile(2),updateTable()">Show Fact File of Salvius</button>
-    <button id="c" onclick="getFile(3),updateTable()">Show Fact File of Varica</button>
-    <button id="d" onclick="getFile(4),updateTable()">Show Fact File of Bregans</button>
-    <button id="e" onclick="getFile(5),updateTable()">Show Fact File of Cogidubnus</button>
-    <button id="f" onclick="getFile(6),updateTable()">Show Fact File of Dumnorix</button>
-    <button id="g" onclick="getFile(7),updateTable()">Show Fact File of Belimicus</button>
+    <button id="a" onclick="setFile(1),updateTable()">Show Fact File of Quintus</button>
+    <button id="b" onclick="setFile(2),updateTable()">Show Fact File of Salvius</button>
+    <button id="c" onclick="setFile(3),updateTable()">Show Fact File of Varica</button>
+    <button id="d" onclick="setFile(4),updateTable()">Show Fact File of Bregans</button>
+    <button id="e" onclick="setFile(5),updateTable()">Show Fact File of Cogidubnus</button>
+    <button id="f" onclick="setFile(6),updateTable()">Show Fact File of Dumnorix</button>
+    <button id="g" onclick="setFile(7),updateTable()">Show Fact File of Belimicus</button>
     <br><br>
     <span style="color:lightseagreen">Stages 17-20: Alexandria, Aegyptus</span>
     <br>
-    <button id="h" onclick="getFile(8),updateTable()">Show Fact File of Clemens</button>
-    <button id="i" onclick="getFile(9),updateTable()">Show Fact File of Barbillus</button>
-    <button id="j" onclick="getFile(10),updateTable()">Show Fact File of Aristo</button>
-    <button id="k" onclick="getFile(11),updateTable()">Show Fact File of Eutychus</button>
-    <button id="l" onclick="getFile(12),updateTable()">Show Fact File of the Astrologer</button>
-    <button id="m" onclick="getFile(13),updateTable()">Show Fact File of Petro</button>
+    <button id="h" onclick="setFile(8),updateTable()">Show Fact File of Clemens</button>
+    <button id="i" onclick="setFile(9),updateTable()">Show Fact File of Barbillus</button>
+    <button id="j" onclick="setFile(10),updateTable()">Show Fact File of Aristo</button>
+    <button id="k" onclick="setFile(11),updateTable()">Show Fact File of Eutychus</button>
+    <button id="l" onclick="setFile(12),updateTable()">Show Fact File of the Astrologer</button>
+    <button id="m" onclick="setFile(13),updateTable()">Show Fact File of Petro</button>
 </body>
