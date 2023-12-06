@@ -1,4 +1,4 @@
 # Latin project
 Tis a school project <br>
-Link: https://bruhbruhcast.github.io/Latin-project/html/home.html
+Link: https://bruhbruhcast.github.io/Latin-project/home.html
 
