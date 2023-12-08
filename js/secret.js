@@ -5,7 +5,7 @@ var unredloc = false
 
 function accessSecrets() {
     if (seclvl === 0) {
-        if (prompt("Enter full name of Salvius") === salvius.fullName) {
+        if (prompt("Enter full name of Salvius").toLowerCase() === salvius.fullName.toLowerCase()) {
             if (prompt("Enter name of stage 16") === "in aula") {
                 if (confirm("Continue?")) {
                     var s = document.getElementById("lvl1");
@@ -72,7 +72,7 @@ function accessSecrets() {
         }
     }
     if (seclvl === 2) {
-        if (prompt("Decrypt: zpvsnpnibtophzbuu") === "your mom has no gyatt") {
+        if (prompt("Decrypt: zpvsnpnibtophzbuu").toLowerCase() === "your mom has no gyatt") {
             if (prompt("Decrypt Eutychus' secret code") === "mhogywdhch") {
                 if (confirm("Continue?")) {
                     unredloc = true
@@ -85,6 +85,29 @@ function accessSecrets() {
                 else {
                     alert("Security clearance failed")
                 }
+            }
+            else {
+                alert("Security clearance failed")
+            }
+        }
+        else {
+            alert("Security clearance failed")
+        }
+    }
+    if (seclvl === 3) {
+        if (prompt("Utter the great words of Latin").toLowerCase() === "caecilius est in horto") {
+            if (prompt("Utter the other great words of Latin").toLowerCase() === "lorem ipsum") {
+                if (prompt("Utter the name of the Roman goddess of magic").toLowerCase() === "hecate") {
+
+                }
+            }
+            else {
+                alert("Security clearance failed")
+            }
+        }
+        if (prompt("Utter the great words of Latin").toLowerCase() === "lorem ipsum") {
+            if (prompt("Utter the other great words of Latin").toLowerCase() === "caecilius est in horto") {
+
             }
             else {
                 alert("Security clearance failed")
