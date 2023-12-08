@@ -1,6 +1,7 @@
 var seclvl = 0
 var progressA = 0 
 var progressE = 0
+var unredloc = false
 
 function accessSecrets() {
     if (seclvl === 0) {
@@ -13,7 +14,10 @@ function accessSecrets() {
                     s.style.display = "block"
                     var s = document.getElementById("grumiotbl2");
                     s.style.display = "block"
-                    seclvl = 1
+                    var s = document.getElementById("lvl2unl");
+                    s.style.display = "block"
+                    var s = document.getElementById("lvl1unl");
+                    s.style.display = "none"
                 }
                 else {
                     alert("Security clearance failed")
@@ -31,10 +35,29 @@ function accessSecrets() {
         if (confirm("Is Grumio the goat?")) {
             if (prompt("How much rizz does Grumio have") >= 3888) {
                 if (prompt("Grumio's gyatt level") >= 40) {
-                    var s = document.getElementById("lvl2");
-                    s.style.display = "block"
-                    seclvl = 2
-                    alert()
+                    if (confirm("Continue?")) {
+                        var s = document.getElementById("lvl2")
+                        s.style.display = "block"
+                        var s = document.getElementById("traceE")
+                        s.style.display = "block"
+                        var s = document.getElementById("progE")
+                        s.style.display = "block"
+                        var s = document.getElementById("locE")
+                        s.style.display = "block"
+                        var s = document.getElementById("traceA")
+                        s.style.display = "block"
+                        var s = document.getElementById("progA")
+                        s.style.display = "block"
+                        var s = document.getElementById("locA")
+                        s.style.display = "block"
+                        var s = document.getElementById("lvl3unl")
+                        s.style.display = "block"
+                        var s = document.getElementById("lvl2unl")
+                        s.style.display = "none"
+                    }
+                    else {
+                        alert("Security clearance failed")
+                    }
                 }
                 else {
                     alert("Security clearance failed")
@@ -48,7 +71,25 @@ function accessSecrets() {
             alert("Security clearance failed")
         }
     }
-}
+    if (seclvl === 2) {
+        if (prompt("Decrypt: zpvsnpnibtophzbuu") === "your mom has no gyatt") {
+            if (prompt("Decrypt Eutychus' secret code") === "mhogywdhch") {
+                if (confirm("Continue?")) {
+                    unredloc = true
+                }
+                else {
+                    alert("Security clearance failed")
+                }
+            }
+            else {
+                alert("Security clearance failed")
+            }
+        }
+        else {
+            alert("Security clearance failed")
+        }
+    }
+} 
 
 function traceLocationA() {   
     var gainLoop = window.setInterval(function() {
@@ -60,8 +101,15 @@ function traceLocationA() {
             progressA = 1
         }
         if (progressA >= 1) {
-            x = "Location: Thebes, Aegyptus"
-            document.getElementById("locA").innerHTML = x
+            if (progressE >= 1) {
+                if (unredloc === false) {
+                    x = "Location: [REDACTED: Requires Level 3 clearance]"
+                }
+                else {
+                    x = "Location: Centre 2"
+                }
+                document.getElementById("locA").innerHTML = x
+            }
         }
     }, 50)
 }
@@ -76,7 +124,12 @@ function traceLocationE() {
             progressE = 1
         }
         if (progressE >= 1) {
-            x = "Location: [REDACTED: Requires Level 3 clearance]"
+            if (unredloc === false) {
+                x = "Location: [REDACTED: Requires Level 3 clearance]"
+            }
+            else {
+                x = "Location: Centre 4"
+            }
             document.getElementById("locE").innerHTML = x
         }
     }, 50)

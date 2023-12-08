@@ -48,7 +48,7 @@ var cogidubnus = {
 }
 var dumnorix = {
     name: "Dumnorix",
-    fullName: "N/A",
+    fullName: "[DATA LOST]",
     status: "Alive",
     description: "Strong",
     personality: "Brave and honest",
@@ -56,7 +56,7 @@ var dumnorix = {
 }
 var belimicus = {
     name: "Belimicus",
-    fullName: "N/A",
+    fullName: "[REDACTED FOR SECURITY] Belimicus",
     status: "Alive",
     description: "Basically Dumnorix but fatter (no exercise lol)",
     personality: "Arrogant and proud, basically a sh*thead",
@@ -72,7 +72,7 @@ var clemens = {
 }
 var barbillus = {
     name: "Barbillus",
-    fullName: "N/A",
+    fullName: "Tiberius [DATA LOST] Barbillus",
     status: "Dead",
     description: "Old guy with a massive scar on his shoulder. Looks white and clammy and dead ('cause he is)",
     personality: "A good man at heart, but gullible",
@@ -80,23 +80,23 @@ var barbillus = {
 }
 var aristo = {
     name: "Aristo",
-    fullName: "N/A",
+    fullName: "[DATA LOST]",
     status: "Alive",
     description: "Barbillus, if you removed the injuries and slapped on a very sad face",
     personality: "Depressed",
     comment: "He's a bit of a weirdo, but I won't say more or else he might commit suicide",
 }
 var eutychus = {
-    name: "Eutychus",
-    fullName: "N/A",
+    name: "Eut<b>y</b>chus",
+    fullName: "[REDACTED FOR SECURITY] Eutychus [REDACTED FOR SECURITY]",
     status: "Alive",
-    description: "An absolute fatass",
-    personality: "An absolute piece of f*cking sh*t",
-    comment: "My polar opposite (totally not biased at all)",
+    description: "An ab<i>s</i>olute fa<b>ta</b>ss",
+    personality: "An ab<b>s</b>olute piece of f*c<b>ki</b>ng sh*t",
+    comment: "My polar o<b>p</b>posite (<b>tot</b>ally not biased at all)",
 }
 var astrologer = {
-    name: "N/A",
-    fullName: "N/A",
+    name: "[REDACTED FOR SECURITY]",
+    fullName: "[DATA EXPUNGED]",
     status: "Alive",
     description: "Hair. Lots of hair",
     personality: "Deceitful, clever, superstitious",
@@ -104,7 +104,7 @@ var astrologer = {
 }
 var petro = {
     name: "Petro",
-    fullName: "N/A",
+    fullName: "[DATA LOST]",
     status: "Alive",
     description: "Just your average man",
     personality: "Kind and caring, very intelligent",
