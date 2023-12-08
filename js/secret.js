@@ -76,6 +76,11 @@ function accessSecrets() {
             if (prompt("Decrypt Eutychus' secret code") === "mhogywdhch") {
                 if (confirm("Continue?")) {
                     unredloc = true
+                    document.getElementById("lvl3").style.display = "block"
+                    document.getElementById("tbltitle").style.display = "block"
+                    document.getElementById("hqtbl").style.display = "block"
+                    document.getElementById("lvl4unl").style.display = "block"
+                    document.getElementById("lvl3unl").style.display = "none"
                 }
                 else {
                     alert("Security clearance failed")

@@ -96,7 +96,7 @@ var eutychus = {
 }
 var astrologer = {
     name: "[REDACTED FOR SECURITY]",
-    fullName: "[DATA EXPUNGED]",
+    fullName: "[REDACTED FOR SECURITY]",
     status: "Alive",
     description: "Hair. Lots of hair",
     personality: "Deceitful, clever, superstitious",
