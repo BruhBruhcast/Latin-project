@@ -100,6 +100,9 @@ function accessSecrets() {
                 if (prompt("Utter the name of the Roman goddess of magic").toLowerCase() === "hecate") {
 
                 }
+                else {
+                    alert("Security clearance failed")
+                }
             }
             else {
                 alert("Security clearance failed")
@@ -107,7 +110,12 @@ function accessSecrets() {
         }
         if (prompt("Utter the great words of Latin").toLowerCase() === "lorem ipsum") {
             if (prompt("Utter the other great words of Latin").toLowerCase() === "caecilius est in horto") {
+                if (prompt("Utter the name of the Roman goddess of magic").toLowerCase() === "hecate") {
 
+                }
+                else {
+                    alert("Security clearance failed")
+                }
             }
             else {
                 alert("Security clearance failed")
