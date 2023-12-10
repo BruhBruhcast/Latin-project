@@ -98,7 +98,19 @@ function accessSecrets() {
         if (prompt("Utter the great words of Latin").toLowerCase() === "caecilius est in horto") {
             if (prompt("Utter the other great words of Latin").toLowerCase() === "lorem ipsum") {
                 if (prompt("Utter the name of the Roman goddess of magic").toLowerCase() === "hecate") {
-
+                    if (confirm("Continue?")) {
+                        document.getElementById("lvl4").style.display = "block"
+                        document.getElementById("htbantitl").style.display = "block"
+                        document.getElementById("howtobuildanuke").style.display = "block"
+                        document.getElementById("lvl5unl").style.display = "block"
+                        document.getElementById("lvl4unl").style.display = "none"
+                    }
+                    else {
+                        alert("Security clearance failed")
+                    }
+                }
+                else {
+                    alert("Security clearance failed")
                 }
             }
             else {
@@ -107,7 +119,21 @@ function accessSecrets() {
         }
         if (prompt("Utter the great words of Latin").toLowerCase() === "lorem ipsum") {
             if (prompt("Utter the other great words of Latin").toLowerCase() === "caecilius est in horto") {
-
+                if (prompt("Utter the name of the Roman goddess of magic").toLowerCase() === "hecate") {
+                    if (confirm("Continue?")) {
+                        document.getElementById("lvl4").style.display = "block"
+                        document.getElementById("htbantitl").style.display = "block"
+                        document.getElementById("howtobuildanuke").style.display = "block"
+                        document.getElementById("lvl5unl").style.display = "block"
+                        document.getElementById("lvl4unl").style.display = "none"
+                    }
+                    else {
+                        alert("Security clearance failed")
+                    }
+                }
+                else {
+                    alert("Security clearance failed")
+                }
             }
             else {
                 alert("Security clearance failed")
