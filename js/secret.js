@@ -34,7 +34,7 @@ function accessSecrets() {
     if (seclvl === 1) {
         if (confirm("Is Grumio the goat?")) {
             if (prompt("How much rizz does Grumio have") >= 3888) {
-                if (prompt("Grumio's gyatt level") >= 40) {
+                if (prompt("Grumio's gyatt level") === 40) {
                     if (confirm("Continue?")) {
                         var s = document.getElementById("lvl2")
                         s.style.display = "block"
@@ -95,8 +95,8 @@ function accessSecrets() {
         }
     }
     if (seclvl === 3) {
-        if (prompt("Utter the great words of Latin").toLowerCase() === "caecilius est in horto") {
-            if (prompt("Utter the other great words of Latin").toLowerCase() === "lorem ipsum") {
+        if (prompt("Utter the great words of Latin (Hint: Garden)").toLowerCase() === "caecilius est in horto") {
+            if (prompt("Utter the other great words of Latin (Hint: Placeholder)").toLowerCase() === "lorem ipsum") {
                 if (prompt("Utter the name of the Roman goddess of magic").toLowerCase() === "hecate") {
                     if (confirm("Continue?")) {
                         document.getElementById("lvl4").style.display = "block"
@@ -117,30 +117,44 @@ function accessSecrets() {
                 alert("Security clearance failed")
             }
         }
-        if (prompt("Utter the great words of Latin").toLowerCase() === "lorem ipsum") {
-            if (prompt("Utter the other great words of Latin").toLowerCase() === "caecilius est in horto") {
-                if (prompt("Utter the name of the Roman goddess of magic").toLowerCase() === "hecate") {
-                    if (confirm("Continue?")) {
-                        document.getElementById("lvl4").style.display = "block"
-                        document.getElementById("htbantitl").style.display = "block"
-                        document.getElementById("howtobuildanuke").style.display = "block"
-                        document.getElementById("lvl5unl").style.display = "block"
-                        document.getElementById("lvl4unl").style.display = "none"
+        
+    }
+    if (seclvl === 4) {
+        if (prompt("Does the black moon howl?").toLowerCase() === "no") {
+            if (prompt("Does the black moon howl?").toLowerCase() === "not without blood") {
+                if (prompt("Does the black moon howl?").toLowerCase() === "only at the blind") {
+                    if (prompt("Does the black moon howl?").toLowerCase() === "not while the stars shine") {
+                        if (prompt("Does the black moon howl?").toLowerCase() === "only when waning") {
+                            if (prompt("Does the black moon howl?").toLowerCase() === "yes") {
+                                document.getElementById("lvl5").style.display = "block"
+                                document.getElementById("scplink").style.display = "block"
+                                document.getElementById("qiuproposal").style.display = "block"
+                                document.getElementById("qiudata").style.display = "block"
+                                document.getElementById("qiuiter").style.display = "block"
+                                document.getElementById("lvl5unl").style.display = "none"
+                            }   
+                            else {
+                                alert("Security clearance failed THEY'RE AFTER YOU NOW")
+                            }
+                        }
+                        else {
+                            alert("Security clearance failed THEY'RE AFTER YOU NOW")
+                        }
                     }
                     else {
-                        alert("Security clearance failed")
+                        alert("Security clearance failed THEY'RE AFTER YOU NOW")
                     }
                 }
                 else {
-                    alert("Security clearance failed")
+                    alert("Security clearance failed THEY'RE AFTER YOU NOW")
                 }
             }
             else {
-                alert("Security clearance failed")
+                alert("Security clearance failed THEY'RE AFTER YOU NOW")
             }
         }
         else {
-            alert("Security clearance failed")
+            alert("Security clearance failed THEY'RE AFTER YOU NOW")
         }
     }
 } 
